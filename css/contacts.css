@@ -1,5 +1,6 @@
 @charset "utf-8";
-html,body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
@@ -7,7 +8,10 @@ html,body{
 	overflow: hidden;
 }
 
+
 /**************************header**************************/
+
+
 /*header{
 	width: 100%;
 	height: 10%;
@@ -58,31 +62,39 @@ header img{
 	width: 100%;
 	height: 100%;
 }*/
+
+
 /**************************section 左侧列表**************************/
-section{
+
+body>section {
 	background: #E2E4E6;
 	height: 100%;
 	display: flex;
 }
-section>div{
+
+body>section>div {
 	height: 100%;
 }
-section>div:first-child{
+
+body>section>div:first-child {
 	width: 20%;
 	background: darkgray;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-section>div:last-child{
-	width: 80%;
+
+body>section>div:nth-child(2) {
+	width: 65%;
 }
-.list{
+
+.list {
 	list-style: none;
 	padding: 0px;
 	margin-top: 0.5rem;
 	width: 100%;
 }
-.list li{
+
+.list li {
 	width: 95%;
 	height: 5rem;
 	margin: 0 auto;
@@ -94,23 +106,29 @@ section>div:last-child{
 	border-radius: 0.2rem;
 	overflow: hidden;
 }
-.list li > div:first-child{
+
+.list li> div:first-child {
 	width: 5rem;
 	height: 5rem;
 	overflow: hidden;
 }
-.list img{
+
+.list img {
 	width: 100%;
 	height: 100%;
 }
-.list>li > div:nth-child(2) > div{
+
+.list>li> div:nth-child(2)> div {
 	height: 2.5rem;
 	line-height: 2.5rem;
 	font-family: "楷体";
 	font-size: 1.5rem;
 }
+
+
 /*用户操作 update delete*/
-.list>li > div:nth-child(2) > div:last-child{
+
+.list>li> div:nth-child(2)> div:last-child {
 	position: absolute;
 	width: 2rem;
 	height: 5rem;
@@ -119,11 +137,14 @@ section>div:last-child{
 	display: none; //隐藏操作键
 }
 
-.list>li > div:nth-child(2) > div:last-child div{
+.list>li> div:nth-child(2)> div:last-child div {
 	height: 2.5rem;
 }
+
+
 /*new message*/
-.list>li>div:last-child{
+
+.list>li>div:last-child {
 	width: 2rem;
 	height: 2rem;
 	border-radius: 50%;
@@ -131,32 +152,43 @@ section>div:last-child{
 	overflow: hidden;
 	right: 2rem;
 	opacity: 0.5;
-	/*display: none;*/   /*初始化时要隐藏*/
+	/*display: none;*/
+	/*初始化时要隐藏*/
 }
-/**************************section 右侧对话框**************************/
+
+
+/**************************section 中间对话框**************************/
+
+
 /***********上端消息显示区***********/
-.message{
-	margin:0rem;
+
+.message {
+	margin: 0rem;
 }
-.message>div{
+
+.message>div {
 	width: 100%;
 }
-.message>div:first-child{
+
+.message>div:first-child {
 	height: 65%;
 	overflow-y: auto;
 }
-.message>div:nth-child(2){
+
+.message>div:nth-child(2) {
 	margin: auto;
 	height: 5%;
 	border: 0.1rem solid #CCC;
 }
-.message>div:last-child{
+
+.message>div:last-child {
 	height: 30%;
 	margin-bottom: 0rem;
 	/*position: relative;*/
 	background: white;
 }
-.message>div:first-child > div{
+
+.message>div:first-child> div {
 	height: 2rem;
 	width: 100%;
 	font-family: "宋体";
@@ -164,87 +196,178 @@ section>div:last-child{
 	color: blue;
 	text-align: center;
 }
-.message>div:first-child > div span{
+
+.message>div:first-child> div span {
 	border-bottom: 0.1rem dashed blue;
 	cursor: pointer;
 }
-.statement{
+
+.statement {
 	list-style: none;
 	padding: 0px;
 	margin-top: 0.5rem;
 	width: 100%;
 }
-.statement>li{
+
+.statement>li {
 	width: 100%;
 	margin-top: 1rem;
 }
-.statement>li>div{
+
+.statement>li>div {
 	max-width: 70%;
 	display: flex;
 }
-.statement>li>div > .headImg{
+
+.statement>li>div> .headImg {
 	width: 3rem;
 }
-.statement img{
+
+.statement img {
 	width: 3rem;
 	height: 3rem;
 	border-radius: 50%;
 }
-.statement p{
+
+.statement p {
 	font-size: 1.4rem;
 	font-family: "楷体";
 	margin: 0.2rem 0.5rem;
 }
-.statement p:first-child span{
+
+.statement p:first-child span {
 	font-weight: bolder;
 }
-.statement p:last-child{
+
+.statement p:last-child {
 	border: 0.1rem dashed #CCC;
 	border-radius: 0.5rem;
 	font-family: "宋体";
 }
-.right>div{
+
+.right>div {
 	margin-left: 28%;
 	text-align: right;
 }
-.left>div{
+
+.left>div {
 	margin-left: 2%;
 }
+
+
 /***********中间表情***********/
-.message>div:nth-child(2){
+
+.message>div:nth-child(2) {
 	display: flex;
 }
-.message>div:nth-child(2) img{
+
+.message>div:nth-child(2) img {
 	width: 2rem;
 	height: 2rem;
 	border-radius: 50%;
 	margin-left: 0.5rem;
 	cursor: pointer;
 }
+
+
 /***********下端消息输入去***********/
-.message>div:last-child>div:first-child{
+
+.message>div:last-child>div:first-child {
 	width: 100%;
 	height: 75%;
 }
-.message>div:last-child>div:first-child textarea{
-	width: 100%;
+
+.message>div:last-child>div:first-child textarea {
+	width: 99.5%;
 	height: 100%;
 	font-family: "微软雅黑";
 	font-size: 1.3rem;
 	padding: 0px;
 	margin: 0px;
 }
-.message>div:last-child>div:last-child{
+
+.message>div:last-child>div:last-child {
 	width: 100%;
 	margin-top: 0.7rem;
 	text-align: right;
 }
-.message>div:last-child>div:last-child button{
+
+.message>div:last-child>div:last-child button {
 	width: 12rem;
 	height: 2.2rem;
-	font-size:1.2rem;
+	font-size: 1.2rem;
 	margin-right: 0.5rem;
 	border-radius: 0.1rem;
 	background: lightgrey;
 	border: 0.1rem solid white;
+}
+
+
+/**************************section 右侧简介**************************/
+
+.summary {
+	background: white;
+	width: 15%;
+	height: 100%;
+}
+
+.summary_model {
+	width: 100%;
+	height: 50%;
+}
+
+.summary_model>header {
+	height: 10%;
+	width: 100%;
+	background: #ADD8E6;
+	font-size: 1.3rem;
+	line-height: 2rem;
+}
+
+.summary_model>section {
+	width: 100%;
+	height: 75%;
+	overflow-y: auto;
+	box-shadow: 0.1rem 0.2rem 1rem 0.1rem #CCC;
+}
+
+.summary_model>footer {
+	width: 100%;
+	height: 15%;
+	text-align: center;
+	border-left: 0.1rem solid #CCC;
+}
+
+.summary_model>section>ul {
+	margin: 0px auto;
+	padding: 0px;
+	height: 100%;
+	width: 95%;
+}
+
+.summary_model>section li {
+	list-style: none;
+	font-family: '楷体';
+	padding-top: 0.5rem;
+}
+
+.summary_model>section label {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	color: #3E3E40;
+	padding-left: 1rem;
+}
+.summary_model>section span {
+	color: #3E3E40;
+	font-family: "宋体";
+	font-size: 1rem;
+}
+.summary_model>footer>button{
+	width: 8rem;
+	height: 2rem;
+	margin-top: 1rem;
+	border: none;
+	border-radius:0.5rem ;
+	cursor: pointer;
+	font-size: 1rem;
 }
