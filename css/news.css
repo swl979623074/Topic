@@ -1,38 +1,47 @@
 @charset "utf-8";
-html,body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
 	overflow: hidden;
 }
+
+
 /**************************section 左侧列表**************************/
-body > section{
+
+body> section {
 	background: #E2E4E6;
 	height: 100%;
 	display: flex;
 }
-body > section>div{
+
+body> section>div {
 	height: 100%;
 }
-body > section>div:first-child{
+
+body> section>div:first-child {
 	width: 20%;
 	background: darkgray;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-body > section>div:last-child{
+
+body> section>div:last-child {
 	width: 80%;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
-.newstype ul{
+
+.newstype ul {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
 }
-.newstype li{
-	list-style:none;
+
+.newstype li {
+	list-style: none;
 	width: 100%;
 	height: 3rem;
 	line-height: 3rem;
@@ -43,76 +52,94 @@ body > section>div:last-child{
 	text-align: center;
 	cursor: pointer;
 }
-.newstype li:hover{
+
+.newstype li:hover {
 	border-bottom: 0.2rem solid white;
 	background: gray;
 }
+
+
 /**************************section 右侧列表**************************/
-.newslist{
+
+.newslist {
 	width: 98%;
 	padding: 0.5rem 0rem;
 	margin: 0px auto;
 	min-height: 90%;
 }
+
+
 /**********************model toutiao*******************/
 
-.toutiao{
+.toutiao {
 	height: 3.5rem;
-	font-size:1.5rem ;
+	font-size: 1.5rem;
 	font-family: "宋体";
 	display: flex;
 	background: #FAFAD2;
 	margin: 0.1rem 0;
 }
-.toutiao span{
+
+.toutiao span {
 	padding-left: 0.5rem;
 }
-.toutiao div:first-child{
+
+.toutiao div:first-child {
 	height: 3rem;
 	line-height: 3.5rem;
 	width: 90%;
 	text-overflow: ellipsis;
-	white-space:nowrap;
-	overflow:hidden; 
+	white-space: nowrap;
+	overflow: hidden;
 }
-.toutiao div:last-child{
+
+.toutiao div:last-child {
 	margin-top: 0.5rem;
 	margin-left: 1.5rem;
 }
-.toutiao img{
+
+.toutiao img {
 	width: 2rem;
 	height: 2rem;
 	border-radius: 50%;
 }
-.toutiao:hover{
+
+.toutiao:hover {
 	background: #FAFAEE;
 }
+
+
 /**********************model simple*******************/
 
-.model{
+.model {
 	background: white;
 	border-bottom: 0.1rem dashed #3E3E40;
 	margin: 0px;
 	padding: 0.5rem;
 }
-.simple{
+
+.simple {
 	height: 12rem;
 	display: flex;
 }
-.simple>div:first-child{
+
+.simple>div:first-child {
 	width: 30%;
 	height: 100%;
 }
-.simple>div:first-child > img{
+
+.simple>div:first-child> img {
 	width: 100%;
 	height: 100%;
 }
-.simple>div:last-child{
+
+.simple>div:last-child {
 	width: 80%;
 	height: 100%;
 	padding-left: 1rem;
 }
-.header{
+
+.header {
 	font-family: "宋体";
 	height: 3rem;
 	line-height: 3rem;
@@ -122,53 +149,65 @@ body > section>div:last-child{
 	overflow: hidden;
 	white-space: nowrap;
 }
-.simple>div:last-child>section{
+
+.simple>div:last-child>section {
 	height: 50%;
 	width: 100%;
 	font-size: 1.5rem;
 	text-overflow: ellipsis;
 	overflow: hidden;
 }
-.footer{
+
+.footer {
 	height: 3rem;
 	font-family: "楷体";
 	font-size: 1rem;
 	display: flex;
 	line-height: 3rem;
 }
-.footer > div:first-child{
+
+.footer> div:first-child {
 	width: 20rem;
 	height: 100%;
 }
-.footer > div:nth-child(2){
+
+.footer> div:nth-child(2) {
 	width: 3rem;
 }
-.footer > div:nth-child(2)>img{
+
+.footer> div:nth-child(2)>img {
 	width: 2rem;
 	height: 2rem;
 	margin: 0.5rem 0rem;
 	border-radius: 50%;
 }
 
+
 /**********************model complex*******************/
-.complex{
+
+.complex {
 	height: 18rem;
 }
-.complex section{
+
+.complex section {
 	height: 12rem;
 	display: flex;
 }
-.complex section img{
+
+.complex section img {
 	height: 12rem;
 	width: 30%;
 	margin: 0 auto;
 }
-.complex footer{
+
+.complex footer {
 	margin-top: 0.1rem;
 }
 
+
 /**********************model createTopic*******************/
-aside{
+
+aside {
 	position: fixed;
 	top: 0;
 	left: 50%;
@@ -180,6 +219,7 @@ aside{
 	border: 0.1rem solid silver;
 	box-shadow: -0.1rem 0.3rem 0.5rem 0.3rem #CCCCCC;
 }
+
 .createTopic> header {
 	height: 2rem;
 	width: 100%;
@@ -192,55 +232,75 @@ aside{
 	float: right;
 	cursor: pointer;
 }
+
 .createTopic> section {
 	width: 100%;
+	height: 75%;
 	margin: 0 auto;
 	font-family: "宋体";
 	font-size: 1.3rem;
 	display: flex;
 }
 
-.createTopic>section>table{
+.createTopic>section>table {
 	width: 100%;
 	height: 100%;
 	margin-top: 1rem;
 }
-.createTopic>section>table input{
+
+.createTopic>section>table input {
 	width: 15rem;
 	height: 1.5rem;
 	line-height: 1.5rem;
+	border: 0.1rem solid #CCC;
+	font-size: 1rem;
+	padding: 0rem;
 }
-.createTopic>section>table select{
+
+.createTopic>section>table select {
 	width: 15.2rem;
 	height: 2rem;
+	border: 0.1rem solid #CCC;
+	font-size: 1rem;
+	padding: 0rem;
 }
-.createTopic>section>table textarea{
+
+.createTopic>section>table textarea {
 	width: 15rem;
 	height: 6rem;
+	border: 0.1rem solid #CCC;
+	font-size: 1rem;
+	padding: 0rem;
 }
-.createTopic>section>table tr{
+
+.createTopic>section>table tr {
 	height: 4rem;
 }
-.createTopic>section>table td:first-child{
-	width:10rem;
+
+.createTopic>section>table td:first-child {
+	width: 10rem;
 	text-align: right;
 	font-family: "宋体";
 	font-weight: bolder;
 	font-size: 1.5rem;
 }
-.createTopic>section>table td:nth-child(2){
+
+.createTopic>section>table td:nth-child(2) {
 	font-size: 1.3rem;
 	font-family: "宋体";
 }
-.createTopic>section>table tr:nth-child(2){
+
+.createTopic>section>table tr:nth-child(2) {
 	vertical-align: top;
 }
-.createTopic>footer{
-	widows: 100%;
+
+.createTopic>footer {
+	width: 100%;
 	margin-top: 2rem;
 	text-align: center;
 }
-.createTopic>footer>button{
+
+.createTopic>footer>button {
 	width: 10rem;
 	height: 3rem;
 	font-family: "楷体";
@@ -260,6 +320,7 @@ aside{
 .hide {
 	display: none;
 }
-.pointer{
+
+.pointer {
 	cursor: pointer;
 }

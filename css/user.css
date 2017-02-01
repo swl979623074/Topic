@@ -35,7 +35,7 @@ body>header>div>button {
 
 .userMessage {
 	width: 85%;
-	/*height: 46rem;*/
+	height: 46rem;
 	overflow-x: hidden;
 	overflow-y: auto;
 	margin: 0.5rem auto;
@@ -44,6 +44,7 @@ body>header>div>button {
 
 .userMessage table {
 	width: 100%;
+	
 }
 
 .userMessage table td {
@@ -51,7 +52,7 @@ body>header>div>button {
 	height: 3rem;
 	font-size: 1.3rem;
 	font-family: "宋体";
-	border: 1px solid #CCC;
+	border: 0.1rem solid #CCC;
 }
 
 .headImg {
@@ -94,7 +95,7 @@ body>header>div>button {
 	width: 15rem;
 	height: 5rem;
 	float: left;
-	margin: 0.5rem 0.1rem;
+	margin: 0.8rem 0.1rem;
 	line-height: 5rem;
 	text-align: center;
 	font-size: 1.5rem;

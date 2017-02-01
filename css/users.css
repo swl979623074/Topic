@@ -30,6 +30,33 @@ body>header li {
 	height: 100%;
 }
 
+body>header input {
+	margin: 1.5rem auto;
+	height: 2rem;
+	width: 15rem;
+	font-family: "宋体";
+	font-size: 1rem;
+	padding: 0rem;
+	border: 0.1rem solid #CCC;
+}
+
+body>header button {
+	height: 2rem;
+	font-family: "宋体";
+	width: 8rem;
+	font-size: 1rem;
+	margin-right: 0.5rem;
+	border-radius: 0.1rem;
+	background: lightgrey;
+	border: 0.1rem solid lightsteelblue;
+	cursor: pointer;
+}
+
+body>header img {
+	width: 100%;
+	height: 100%;
+}
+
 body>header li:last-child {
 	width: 8%;
 }
@@ -43,32 +70,6 @@ body>header li:last-child>div {
 	margin: 0.8rem auto;
 	overflow: hidden;
 }
-
-body>header input {
-	margin: 1.5rem auto;
-	height: 1.5rem;
-	width: 15rem;
-	font-family: "宋体";
-}
-
-body>header button {
-	height: 2rem;
-	font-family: "宋体";
-	width: 5rem;
-	font-size: 1.2rem;
-	margin-right: 0.5rem;
-	border-radius: 0.1rem;
-	background: lightgrey;
-	border: 0.1rem solid lightsteelblue;
-	cursor: pointer;
-}
-
-
-body>header img {
-	width: 100%;
-	height: 100%;
-}
-
 
 /**********section**********/
 

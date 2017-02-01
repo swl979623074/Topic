@@ -8,62 +8,6 @@ body {
 	overflow: hidden;
 }
 
-
-/**************************header**************************/
-
-
-/*header{
-	width: 100%;
-	height: 10%;
-	background: #CCC;
-}
-header ul{
-	margin: 0px;
-	height: 100%;
-	display: flex;
-	padding-left: 2rem;
-}
-header li{
-	height: 100%;
-	list-style: none;
-	margin-left: 0.5rem;	
-}
-header li:last-child{
-	width: 8%;
-}
-header li:last-child>div{
-	border-radius: 50%;
-	cursor: pointer;
-}
-header input{
-	margin: 1.5rem auto;
-	height: 1.5rem;
-	width: 15rem;
-	font-family: "宋体";
-}
-header button{
-	height: 2rem;
-	font-family: "宋体";
-	width: 5rem;
-	font-size:1.2rem;
-	margin-right: 0.5rem;
-	border-radius: 0.1rem;
-	background: lightgrey;
-	border: 0.1rem solid lightsteelblue;
-}
-header div{
-	width: 3rem;
-	height: 3rem;
-	margin: 0.8rem auto;
-	overflow: hidden;
-}
-
-header img{
-	width: 100%;
-	height: 100%;
-}*/
-
-
 /**************************section 左侧列表**************************/
 
 body>section {
@@ -357,17 +301,21 @@ body>section>div:nth-child(2) {
 	color: #3E3E40;
 	padding-left: 1rem;
 }
+
 .summary_model>section span {
 	color: #3E3E40;
 	font-family: "宋体";
 	font-size: 1rem;
 }
-.summary_model>footer>button{
-	width: 8rem;
+
+.summary_model>footer>button {
+	width: 9rem;
 	height: 2rem;
 	margin-top: 1rem;
 	border: none;
-	border-radius:0.5rem ;
+	border-radius: 0.5rem;
 	cursor: pointer;
 	font-size: 1rem;
+	line-height: 1.5rem;
+	text-align: center;
 }

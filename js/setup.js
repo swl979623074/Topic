@@ -1,3 +1,4 @@
+
 (function(){
 	window.onresize = function() {
 		throttle(window.onload)
@@ -15,13 +16,3 @@
 	    html.style.fontSize = window.innerWidth / 100 + "px";
 	}
 })();
-
-
-function showDialog(){
-	$(".addUserDialog").removeClass('hide');
-}
-
-function hideDialog(){
-	$(".addUserDialog").addClass('hide');
-}
-
