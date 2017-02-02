@@ -1,5 +1,3 @@
-
-
 (function(){
 	window.onresize = function() {
 		throttle(window.onload)

@@ -12,25 +12,40 @@ body {
 
 /**************************header****************************/
 
-header {
+body>header {
 	width: 100%;
 	height: 8%;
 	background: #CCC;
 }
 
-header div {
+body>header div {
 	height: 100%;
 }
 
 .logo {
 	margin-left: 5%;
 	float: left;
-	width: 70%;
+	width: 4rem;
 }
 
 .logo img {
-	height: 4.5rem;
-	width: 4.5rem;
+	height: 100%;
+	width: 100%;
+}
+
+.title {
+	text-decoration: none;
+	font-size: 2rem;
+	line-height: 4rem;
+	display: inline-block;
+	height: 100%;
+	font-family: "blackadder itc";
+	font-weight: bolder;
+}
+
+.title>a {
+	text-decoration: none;
+	color: black;
 }
 
 .usermsg {
