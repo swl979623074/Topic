@@ -65,11 +65,12 @@ body>header li:last-child>div {
 	height: 100%;
 	border-radius: 50%;
 	cursor: pointer;
-	width: 3rem ;
-	height: 3rem ;
+	width: 3rem;
+	height: 3rem;
 	margin: 0.8rem auto;
 	overflow: hidden;
 }
+
 
 /**********section**********/
 
@@ -147,7 +148,7 @@ aside {
 	margin: 0px;
 }
 
-.userMessage li{
+.userMessage li {
 	list-style: none;
 	width: 100%;
 	display: block;
@@ -155,14 +156,17 @@ aside {
 	text-indent: 2rem;
 	border-bottom: 0.1rem dashed #CCC;
 }
-.userMessage label{
+
+.userMessage label {
 	font-family: "宋体";
 	font-weight: bolder;
 }
-.userMessage span{
+
+.userMessage span {
 	padding-top: 1rem;
 	line-height: 2rem;
 }
+
 .userMessage li:first-child {
 	height: 10rem;
 	width: 100%;
@@ -175,12 +179,13 @@ aside {
 	height: 8rem;
 	margin: 1rem;
 	overflow: hidden;
-	
 }
-.userMessage li:first-child> div:first-child{
+
+.userMessage li:first-child> div:first-child {
 	border: 0.2rem solid #CCC;
 	padding: 0.2rem;
 }
+
 .userMessage img {
 	width: 100%;
 	height: 100%;
@@ -204,14 +209,16 @@ aside {
 	text-overflow: ellipsis;
 	border-bottom: 0.1rem dashed #CCC;
 }
-.userMessage li:last-child{
+
+.userMessage li:last-child {
 	position: absolute;
 	bottom: 2rem;
 	border: none;
 	text-align: center;
 	text-indent: 0rem;
 }
-.userMessage li:last-child button{
+
+.userMessage li:last-child button {
 	width: 10rem;
 	height: 3rem;
 	font-family: "楷体";
@@ -219,7 +226,9 @@ aside {
 	background: dodgerblue;
 	border: 0.1rem solid #CCC;
 	cursor: pointer;
+	color: white;
 }
+
 
 /**********************common*******************/
 

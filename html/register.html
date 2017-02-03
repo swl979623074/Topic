@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title>Topic register</title>
@@ -12,6 +13,7 @@
 		<script type="text/javascript" src="../js/angular.js"></script>
 		<script type="text/javascript" src="../js/register.js"></script>
 	</head>
+
 	<body>
 		<header>
 			<div class='logo'>
@@ -21,5 +23,122 @@
 				<a href="home.html">Topic</a>
 			</div>
 		</header>
+		<section>
+			<div class="box_model baseMessage showdown">
+				<header>
+					基本信息
+				</header>
+				<section>
+					<ul>
+						<li>
+							<label>昵称：</label>
+							<input type="text" />
+							<span>*</span>
+						</li>
+						<li>
+							<label>用户名：</label>
+							<input type="text" />
+							<span>*</span>
+						</li>
+						<li>
+							<label>密码：</label>
+							<input type="text" />
+							<span class="">*密码长度不小6位，不得包含特殊字符</span>
+						</li>
+						<li>
+							<label>重复新密码：</label>
+							<input type="text" />
+							<span class="error">*两次密码不一致</span>
+						</li>
+						<li>
+							<label>邮箱：</label>
+							<input type="text" />
+							<span>*用于找回密码</span>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="box_model Individualization showdown">
+				<header>
+					个性化设置
+				</header>
+				<section>
+					<ul>
+						<li class="sex">
+							<label>性别：</label>
+							<input type="radio" name="sex" />男
+							<input type="radio" name="sex" />女
+						</li>
+						<li class="profession">
+							<label>职业：</label>
+							<input type="text" />
+							<span>多个职业请以分号隔开</span>
+						</li>
+						<li>
+							<label>职业：</label>
+							<div class="newsType">
+								<div>
+									<div>
+										<span>计算机</span>
+									</div>
+									<div class="">
+										<img src="../img/logo.png" />
+									</div>
+								</div>
+								<div>
+									<div>
+										<span>计算机</span>
+									</div>
+									<div class="hide">
+										<img src="../img/logo.png" />
+									</div>
+								</div>
+								<div>
+									<div>
+										<span>计算机</span>
+									</div>
+									<div class="">
+										<img src="../img/logo.png" />
+									</div>
+								</div>
+								<div>
+									<div>
+										<span>计算机</span>
+									</div>
+									<div class="hide">
+										<img src="../img/logo.png" />
+									</div>
+								</div>
+								<div>
+									<div>
+										<span>计算机</span>
+									</div>
+									<div class="">
+										<img src="../img/logo.png" />
+									</div>
+								</div>
+
+							</div>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</section>
+		<footer class="box_model register showdown">
+			<header>
+				注册
+			</header>
+			<section>
+				<div>
+					<input type="checkbox" name="summary">
+					<a href="summary.html">我已阅读系统说明（查看系统说明）</a>
+				</div>
+				<div>
+					<button>提交注册</button>
+				</div>
+			</section>
+
+		</footer>
 	</body>
+
 </html>

@@ -65,16 +65,19 @@ body>header li:last-child>div {
 	height: 100%;
 	border-radius: 50%;
 	cursor: pointer;
-	width: 3rem ;
-	height: 3rem ;
+	width: 3rem;
+	height: 3rem;
 	margin: 0.8rem auto;
 	overflow: hidden;
 }
+
+
 /**********section**********/
 
 section {
 	height: 90%;
 }
+
 
 /**********************model createTopic*******************/
 
@@ -180,6 +183,7 @@ aside {
 	background: dodgerblue;
 	border: 0.1rem solid #CCC;
 	cursor: pointer;
+	color: white;
 }
 
 
