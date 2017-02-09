@@ -8,6 +8,7 @@ body {
 	overflow: hidden;
 }
 
+
 /**************************section 左侧列表**************************/
 
 body>section {
@@ -318,4 +319,72 @@ body>section>div:nth-child(2) {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-align: center;
+}
+
+
+/**********************aside********************/
+
+aside {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -12.5rem;
+	width: 25rem;
+	height: 15rem;
+	background: white;
+	z-index: order;
+	border: 0.1rem solid silver;
+	box-shadow: -0.1rem 0.3rem 0.5rem 0.3rem #CCCCCC;
+}
+
+aside> header {
+	height: 2rem;
+	width: 100%;
+	background: gray;
+}
+
+aside> header img {
+	width: 2rem;
+	height: 2rem;
+	float: right;
+	cursor: pointer;
+}
+
+aside>section {
+	height: 8rem;
+	font-size: 1.5rem;
+	line-height: 8rem;
+	text-align: center;
+}
+
+aside>section input {
+	height: 3rem;
+	width: 70%;
+	margin-top: 2rem;
+	border: 0.1rem solid #CCC;
+	font-size: 1.3rem;
+}
+
+aside>footer {
+	width: 100%;
+	text-align: center;
+	margin-top: 1rem;
+}
+
+aside>footer>button {
+	width: 30%;
+	height: 2.5rem;
+	border: 0.1rem solid #CCC;
+	background: dodgerblue;
+	cursor: pointer;
+	font-size: 1.3rem;
+	border-radius: 0.5rem;
+	color: white;
+}
+
+
+
+/**********************common********************/
+.hide{
+	display: none;
 }

@@ -31,9 +31,18 @@ $(function(){
 	
 })
 
-function deleteUser(){
-	alert("delete user")
+function openDialog(title){
+	$(".delete_or_update_dialog").removeClass("hide");
+	if(title == "delete"){
+		$(".update").hasClass("hide") ? null :$(".update").addClass('hide');
+		$(".delete").removeClass("hide");
+	}else{
+		$(".delete").hasClass("hide") ? null :$(".delete").addClass('hide');
+		$(".update").removeClass("hide");
+	}
 }
-function updateUser(){
-	alert("update user")
+function hideDialog(){
+	$(".delete").hasClass("hide") ? null :$(".delete").addClass('hide');
+	$(".update").hasClass("hide") ? null :$(".update").addClass('hide');
+	$(".delete_or_update_dialog").hasClass("hide") ? null :$(".delete_or_update_dialog").addClass('hide');
 }

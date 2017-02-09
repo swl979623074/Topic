@@ -34,10 +34,10 @@
 							</div>
 							<div>
 								<div>
-									<img src="../img/logo.png" alt='delete' title="delete" onclick="deleteUser()" />
+									<img src="../img/logo.png" userId='123456789' alt='delete' title="delete" onclick="openDialog(this.title)" />
 								</div>
 								<div>
-									<img src="../img/logo.png" alt='update' title="update" onclick="updateUser()" />
+									<img src="../img/logo.png" userId='123456789' alt='update' title="update" onclick="openDialog(this.title)" />
 								</div>
 							</div>
 						</div>
@@ -176,7 +176,20 @@
 				</div>
 			</div>
 		</section>
-
+		<aside class="delete_or_update_dialog hide">
+			<header>
+				<img title='关闭' src="../img/logo.png" onclick="hideDialog()" />
+			</header>
+			<section >
+				<span class="delete hide">确认删除？</span>
+				<input class="update hide" type="text" placeholder="请输入备注名"/>
+			</section>
+			<footer>
+				<button>确定</button>
+				<button>取消</button>
+			</footer>
+		</aside>
+		
 	</body>
 
 </html>
